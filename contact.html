@@ -28,13 +28,24 @@
     <p>Best way to reach me: <a href="mailto:nithin.duvvuru@gmail.com">nithin.duvvuru@gmail.com</a>. I’m open to opportunities in ASIC/FPGA design and digital hardware.</p>
     <!-- <form name="contact" onsubmit="return handleContact(event)"> -->
     <form action="https://formspree.io/f/myznjavv" method="POST">
-      <div class="form-row">
-        <div><label for="name">Name</label><input id="name" required/></div>
-        <div><label for="email">Email</label><input id="email" type="email" required/></div>
-      </div>
-      <div style="margin-top:12px"><label for="msg">Message</label><textarea id="msg" rows="6" required></textarea></div>
-      <div style="margin-top:12px"><button class="btn">Send</button></div>
-    </form>
+  <div class="form-row">
+    <div>
+      <label for="name">Name</label>
+      <input id="name" name="name" required />
+    </div>
+    <div>
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" required />
+    </div>
+  </div>
+  <div style="margin-top:12px">
+    <label for="msg">Message</label>
+    <textarea id="msg" name="message" rows="6" required></textarea>
+  </div>
+  <div style="margin-top:12px">
+    <button class="btn" type="submit">Send</button>
+  </div>
+</form>
     <p class="banner">This demo form keeps messages locally in your browser (no backend). Replace <code>handleContact</code> with your preferred form service.</p>
   </div>
 </section>
