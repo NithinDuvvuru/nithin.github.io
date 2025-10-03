@@ -27,7 +27,12 @@
   <div class="card">
     <p>Best way to reach me: <a href="mailto:nithin.duvvuru@gmail.com">nithin.duvvuru@gmail.com</a>. I’m open to opportunities in ASIC/FPGA design and digital hardware.</p>
     <!-- <form name="contact" onsubmit="return handleContact(event)"> -->
-    <form action="https://formspree.io/f/myznjavv" method="POST">
+<form 
+  id="contactForm"
+  action="https://formspree.io/f/myznjavv" 
+  method="POST" 
+  target="_blank"
+>
   <div class="form-row">
     <div>
       <label for="name">Name</label>
@@ -46,6 +51,14 @@
     <button class="btn" type="submit">Send</button>
   </div>
 </form>
+
+<script>
+  document.getElementById("contactForm").addEventListener("submit", function() {
+    // clear form fields after submit
+    setTimeout(() => this.reset(), 100); 
+  });
+</script>
+
     <p class="banner">This demo form keeps messages locally in your browser (no backend). Replace <code>handleContact</code> with your preferred form service.</p>
   </div>
 </section>
