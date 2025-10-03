@@ -1,46 +1,62 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Experience | Nithin Duvvuru</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <script defer src="assets/js/nav.js"></script>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Experience · Nithin Duvvuru</title>
+  <link rel="stylesheet" href="assets/style.css"/>
 </head>
 <body>
-<nav>
-  <div class="container">
-    <strong>Nithin Duvvuru</strong>
-    <ul class="nav-links">
-      <li><a href="index.html">About</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="experience.html">Experience</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
+<header class="header">
+  <div class="container nav">
+    <div class="brand"><div class="logo">ND</div><h1>Nithin Duvvuru</h1></div>
+    <nav class="menu">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="experience.html" class="active">Experience</a>
+      <a href="contact.html">Contact</a>
+    </nav>
   </div>
-</nav>
+</header>
+<main class="container">
 
-<section class="container">
+<section class="section">
   <h2>Experience</h2>
-  <div class="card" style="margin-bottom:2rem">
-    <strong>Digital Design Engineer – WaveWorks Technologies</strong> (part-time)<br>
-    2024-present | Remote<br>
-    • Led RTL design & verification for 802.11b backscatter chip.<br>
-    • Achieved 10 µW standby power; UVM regressions & formal LEC.
-  </div>
-  <div class="card" style="margin-bottom:2rem">
-    <strong>Undergraduate Researcher – Baskin Engineering, UCSC</strong><br>
-    2024-present | Santa Cruz, CA<br>
-    • Extracted thermal side-channel fingerprints from cloud FPGAs.<br>
-    • Contributed to “Pentimento” data-remanence paper (under review).
-  </div>
-  <div class="card">
-    <strong>ML Engineering Intern – EazyML</strong><br>
-    2024 | Remote<br>
-    • Boosted model accuracy 15 % via bias detection & smart imputation.
+  <div class="grid">
+
+    <article class="card">
+      <h3>Digital Design Engineer · WaveWorks Technologies</h3>
+      <p><em>Jul 2025 – Present · Seattle, WA (part-time)</em></p>
+      <ul>
+        <li>Implemented Verilog RTL for a low-power Wi-Fi backscatter chip supporting IEEE 802.11b MAC/PHY.</li>
+        <li>Built cocotb testbenches and targeted simulations to improve verification efficiency.</li>
+        <li>Collaborated on synthesis with Synopsys Fusion Compiler; optimized RTL for area and power.</li>
+      </ul>
+    </article>
+
+    <article class="card">
+      <h3>Undergraduate Research Assistant · UCSC Hardware Systems Collective</h3>
+      <p><em>Jun 2024 – Present · Santa Cruz, CA</em></p>
+      <ul>
+        <li>Processed FPGA sensor temperature data for the “Pentimento” study; improved analysis accuracy.</li>
+        <li>Analyzed BTI-related side-channel effects with custom verification and outlier reduction.</li>
+      </ul>
+    </article>
+
+    <article class="card">
+      <h3>Computer Science Intern · Datanomers (EasyML)</h3>
+      <p><em>Jun 2024 – Dec 2024 · Freehold, NJ</em></p>
+      <ul>
+        <li>Enhanced bias detection, imputation, and feature selection to raise model accuracy.</li>
+        <li>Improved API-driven GUI reliability and documented test plans; security improvements via pentesting.</li>
+      </ul>
+    </article>
+
   </div>
 </section>
 
-<footer>© 2025 Nithin Duvvuru</footer>
+</main>
+<footer class="footer container"><div>© 2025 Nithin Duvvuru</div></footer>
 </body>
 </html>
