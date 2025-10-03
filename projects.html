@@ -3,8 +3,9 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Experience · Nithin Duvvuru</title>
+  <title>Projects · Nithin Duvvuru</title>
   <link rel="stylesheet" href="assets/style.css"/>
+  <script defer src="assets/script.js"></script>
 </head>
 <body>
 <header class="header">
@@ -13,8 +14,8 @@
     <nav class="menu">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
-      <a href="projects.html">Projects</a>
-      <a href="experience.html" class="active">Experience</a>
+      <a href="projects.html" class="active">Projects</a>
+      <a href="experience.html">Experience</a>
       <a href="contact.html">Contact</a>
     </nav>
   </div>
@@ -22,38 +23,33 @@
 <main class="container">
 
 <section class="section">
-  <h2>Experience</h2>
+  <h2>Selected Projects</h2>
   <div class="grid">
-
     <article class="card">
-      <h3>Digital Design Engineer · WaveWorks Technologies</h3>
-      <p><em>Jul 2025 – Present · Seattle, WA (part-time)</em></p>
-      <ul>
-        <li>Implemented Verilog RTL for a low-power Wi-Fi backscatter chip supporting IEEE 802.11b MAC/PHY.</li>
-        <li>Built cocotb testbenches and targeted simulations to improve verification efficiency.</li>
-        <li>Collaborated on synthesis with Synopsys Fusion Compiler; optimized RTL for area and power.</li>
-      </ul>
+      <h3>IBEX Processor — RTL-to-GDSII</h3>
+      <p>Implemented the RISC-V IBEX core through OpenLane to GDSII with zero DRC/LVS and zero timing violations. Reduced die area by 42%, decreased clock skew by 1ns, and achieved ~5% power reduction.</p>
+      <p><strong>Tools:</strong> OpenLane, NGSpice, KLayout</p>
     </article>
-
     <article class="card">
-      <h3>Undergraduate Research Assistant · UCSC Hardware Systems Collective</h3>
-      <p><em>Jun 2024 – Present · Santa Cruz, CA</em></p>
-      <ul>
-        <li>Processed FPGA sensor temperature data for the “Pentimento” study; improved analysis accuracy.</li>
-        <li>Analyzed BTI-related side-channel effects with custom verification and outlier reduction.</li>
-      </ul>
+      <h3>Tuner — Real-time Note Detection</h3>
+      <p>Correlation-based musical note detection in SystemVerilog with ~99% accuracy. Used fixed-point arithmetic for ~40% compute reduction and pipelined architecture for continuous 44.1kHz processing.</p>
+      <p><strong>Tools:</strong> SystemVerilog, Verilator</p>
     </article>
-
     <article class="card">
-      <h3>Computer Science Intern · Datanomers (EasyML)</h3>
-      <p><em>Jun 2024 – Dec 2024 · Freehold, NJ</em></p>
-      <ul>
-        <li>Enhanced bias detection, imputation, and feature selection to raise model accuracy.</li>
-        <li>Improved API-driven GUI reliability and documented test plans; security improvements via pentesting.</li>
-      </ul>
+      <h3>Dino Run (FPGA)</h3>
+      <p>State machine game on Basys-3 with RNG, VGA, and collision/score logic.</p>
     </article>
-
+    <article class="card">
+      <h3>Stop It (FPGA)</h3>
+      <p>Sequential game state machine on Basys-3; focus on timing-friendly design.</p>
+    </article>
   </div>
+</section>
+
+<section class="section">
+  <h2>From GitHub</h2>
+  <div id="repo-grid" class="grid"></div>
+  <div class="banner">This section lists your 6 most recently updated repositories. Change <code>GITHUB_USERNAME</code> in <code>assets/script.js</code>.</div>
 </section>
 
 </main>
